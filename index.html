@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Form con CSS</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="heading">
+        <h4 id="title">Payment for example</h4>
+      </div>
+
+      <div class="body">
+        <div class="p-1"><p class="p-2">Some fields are missing</p></div>
+        <form class="personalInformationCard">
+          <div class="informationCard">
+            <label for="numbercard" class="card"
+              >Card <ion-icon name="card-outline"></ion-icon
+            ></label>
+            <label class="cvc" for="cvc">cvc #</label>
+            <label class="amount" for="amount">Amount</label><br />
+          </div>
+          <div class="dataCard">
+            <input
+              type="text"
+              maxlength="16"
+              class="cardBar"
+              id="numberCard"
+              placeholder="XXXXXXXXXXXXXXXX"
+            />
+            <input
+              type="text"
+              name="cvc"
+              id="cvc"
+              class="cvcBar"
+              placeholder="0000"
+              maxlength="4"
+            />
+            <label class="dolar"><i class="fa-solid fa-dollar-sign"></i></label
+            ><input
+              type="text"
+              id="amount"
+              class="amountBar"
+              placeholder="Amount"
+            />
+          </div>
+        </form>
+        <form>
+          <div class="personaldata">
+            <label class="firstName" for="firstName">First Name</label>
+            <label class="lastName" for="lastName">Last Name</label><br />
+          </div>
+          <div class="personalData1">
+            <input
+              type="text"
+              class="firstNamebar"
+              name="first name"
+              id="firstName"
+              required
+            />
+            <input
+              type="text"
+              class="lastNamebar"
+              name="Last name"
+              id="lastName"
+              required
+            />
+          </div>
+        </form>
+        <form>
+          <div class="place">
+            <label class="city" for="Citybar">City</label>
+            <label class="state" for="Statebar">State</label>
+            <label class="postalCode" for="PostalCodebar">Postal Code</label>
+            <br />
+          </div>
+          <input
+            type="text"
+            class="Citybar"
+            name="City"
+            id="Citybar"
+            required
+          />
+          <select class="Statebar" name="state" id="Statebar" required>
+            <option selected>Pick a state</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="California">California</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Luisiana">Luisiana</option>
+          </select>
+          <input
+            class="PostalCodebar"
+            type="text"
+            name="postal code"
+            id="PostalCodebar"
+            maxlength="5"
+          />
+        </form>
+        <form>
+          <div class="weAcceptMessage">
+            <label id="weAccept" for="weAccept">We accept:</label>
+            <label id="Message" for="Message">Message</label>
+            <br />
+          </div>
+          <div class="type">
+            <div class="typeCard">
+              <input type="radio" id="weAccept" name="weAccept" />
+              <label for="weAccept"><i class="fa-brands fa-cc-visa"></i></label>
+              <input type="radio" id="weAccept" name="weAccept" />
+              <label for="weAccept"
+                ><i class="fa-brands fa-cc-mastercard"></i
+              ></label>
+              <input type="radio" id="weAccept" name="weAccept" />
+              <label for="weAccept"
+                ><i class="fa-brands fa-cc-diners-club"></i
+              ></label>
+              <input type="radio" id="weAccept" name="weAccept" />
+              <label for="weAccept"><i class="fa-brands fa-cc-amex"></i></label>
+            </div>
+            <div class="comment">
+              <input class="commentBar" type="text" id="Message" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer">
+        <form class="footer-1">
+          <input
+            type="reset"
+            class="cancel"
+            name="cancel"
+            id="cancel"
+            value="cancel"
+          />
+          <input
+            type="submit"
+            class="send"
+            name="send"
+            id="send"
+            value="send"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
